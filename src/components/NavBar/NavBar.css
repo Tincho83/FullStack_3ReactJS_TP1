@@ -13,3 +13,8 @@
 .botonMenuItem {
     background-color: #EDF2F7;
 }
+
+.campoBuscar {
+    background-color: #EDF2F7 !important;
+    width: 35% !important;
+}

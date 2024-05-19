@@ -16,14 +16,3 @@ const ItemListContainer = ({ title }) => {
 }
 
 export default ItemListContainer
-
-
-/*
-        <h2>Lista de Productos</h2>
-      <Div>
-        <p>Producto1</p>
-        <p>Producto2</p>
-        <p>Producto3</p>
-      </Div>
-
-*/

@@ -33,7 +33,6 @@ const NavBar = () => {
                 <ChakraLink href='#' isExternal marginLeft={'25px'} marginRight={'2px'}> <MdOutlineCreditCard /></ChakraLink>Financiacion
                 <ChakraLink href='#' isExternal marginLeft={'25px'} marginRight={'2px'}> <MdOutlineLiveHelp /></ChakraLink>Ayuda
                 <ChakraLink href='https://www.nationalgeographicla.com/medio-ambiente/2023/04/dia-de-la-tierra-10-acciones-sustentables-que-puedes-realizar-para-cuidar-el-planeta' isExternal marginLeft={'25px'} marginRight={'5px'}> <GiPlanetConquest /></ChakraLink>Cuidemos el Planeta
-
             </Flex>
 
             <Flex h={'14hv'} w={'100%'} justify={'space-between'} align={'center'} backgroundColor={'#CAE5FF'} className='flexboxNavBar' id='flexboxNavBarD'>
@@ -58,32 +57,17 @@ const NavBar = () => {
                         <MenuItem icon={<IoMdHelpCircleOutline />} command='' className='botonMenuItem'>
                             Ayuda
                         </MenuItem>
-                        <MenuItem icon={<IoMdSearch />} command='' className='botonMenuItem'>
-                            Buscar
-                            <Input placeholder='Buscar' size='md' type='Search' />
-                        </MenuItem>
-                        <MenuItem icon={<IoMoonOutline />} command='' className='botonMenuItem'>
-                            Modo Noche
-                            <Switch colorScheme='teal' size='lg' />
-                        </MenuItem>
                     </MenuList>
                 </Menu>
-                <img src={reactLogo} alt="Logo Mi tienda Online" class="imglogo"></img>
-                <Heading color={'#6F8AB7'} fontSize={'xx-large'} m='10px'>Mi Tienda Online</Heading>
+                <img src={reactLogo} alt="Logo Mi tienda Online" className='imglogo'></img>
+                <Heading color={'#6F8AB7'} fontSize={'x-large'} m='10px'>Mi Tienda Online</Heading>
+                <Input placeholder='Buscar' size='sm' type='Search' className='campoBuscar'/>
                 <CartWidget />
+                Modo Noche
+                <Switch colorScheme='teal' size='lg' />
             </Flex>
         </Box>
     )
 }
 
 export default NavBar
-
-// <Text as='b' fontSize='32px' color='#6F8AB7'>Mi Tienda Online</Text>
-
-/*
-                <Stack align='center' direction='row'>
-                    <Switch colorScheme='teal' size='lg' />
-                </Stack>
-<Input placeholder='Select Date and Time' size='md' type='datetime-local' />
-
-*/
